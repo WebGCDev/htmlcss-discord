@@ -1,0 +1,182 @@
+/*
+******
+Reset
+******
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+******
+DEBUG
+******
+*/
+
+.header-top {
+  background-color: #add8e6;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contyellow {
+  background-color: #daa520;
+  display: flex;
+  justify-content: center;
+}
+
+.col1head,
+.col3head {
+  height: 46px;
+  width: 246px;
+  border-style: dashed;
+}
+
+.col2head {
+  height: 46px;
+  width: 747px;
+  border-style: dashed;
+}
+
+.header-bottom {
+  background-color: #00008b;
+  display: flex;
+  justify-content: center;
+}
+
+.contpink {
+  background-color: #ee82ee;
+  height: 400px;
+  width: 950px;
+  margin: 50px 0px 50px 0px;
+  border-style: dashed;
+}
+
+.container-central {
+  background: #d3d3d3;
+  padding: 50px 0px 50px 0px;
+}
+
+.container-1-3 {
+  margin: 0px auto;
+  width: 1200px;
+  display: flex;
+  margin: 55px 0px 55px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-2-4 {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+
+.col1 {
+  background-color: #1e90ff;
+  height: 518px;
+  width: 746px;
+  border-style: dashed;
+}
+
+.col2 {
+  background-color: #ffc0cb;
+  height: 518px;
+  width: 495px;
+  border-style: dashed;
+}
+
+.last-container {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+}
+
+.contgreen {
+  background-color: #228b22;
+  height: 400px;
+  width: 930px;
+  margin: 50px 0px 50px 0px;
+  border-style: dashed;
+}
+
+.container {
+  display: flex;
+  background-color: #23272a;
+  padding-top: 40px;
+  width: 1200px;
+  margin: auto;
+}
+
+footer {
+  background-color: #23272a;
+}
+
+.endfood {
+  background: #7dffd6;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  height: 44px;
+  align-items: center;
+}
+
+.col1foot {
+  background-color: #f08080;
+  height: 600px;
+  width: 40%;
+  border-style: dashed;
+}
+
+.horizontal-spacer {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.col1end,
+.col2end {
+  background-color: #ffb6c1;
+  border-style: dashed;
+}
+
+.col2foot,
+.col3foot,
+.col4foot,
+.col5foot {
+  background-color: #20b2aa;
+  height: 600px;
+  width: 20%;
+  border-style: dashed;
+  border-color: white;
+}
+
+/*
+******
+Common
+******
+*/
+
+/*
+******
+Header
+******
+*/
+
+/*
+******
+Main
+******
+*/
+
+/*
+******
+Footer
+******
+*/
