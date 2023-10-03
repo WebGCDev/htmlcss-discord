@@ -1,8 +1,12 @@
 /*
-******
+************
 Reset
-******
+************
 */
+
+:root {
+  --bg-topbar: #abd7e6;
+}
 
 * {
   margin: 0;
@@ -11,172 +15,182 @@ Reset
 }
 
 /*
-*******
-DEBUG
-*******
+************
+Debug
+classi precedute da .debug per la gestione degli spazi
+************
 */
 
-.header-top {
-  background-color: #add8e6;
-  height: 83px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.debug header .top-menu > *,
+.debug header .jumbotron .content,
+.debug main .section .row > div,
+.debug main .section .row-big > div,
+.debug footer .row > div {
 }
 
-.contyellow {
-  background-color: #daa520;
-  display: flex;
-  justify-content: center;
+.debug footer .row .col-big .col {
+  border: 2px dashed white;
 }
 
-.col1head,
-.col3head {
-  height: 46px;
-  width: 246px;
-  border-style: dashed;
+.debug header .jumbotron .content {
+  height: 415px;
 }
 
-.col2head {
-  height: 46px;
-  width: 747px;
-  border-style: dashed;
+.debug main .section .row {
+  height: 525px;
 }
 
-.header-bottom {
-  background-color: #00008b;
-  display: flex;
-  justify-content: center;
+.debug main .section .row-big .col-full {
+  height: 940px;
 }
 
-.contpink {
-  background-color: #ee82ee;
-  height: 400px;
-  width: 950px;
-  margin: 50px 0px 50px 0px;
-  border-style: dashed;
+.debug footer .row {
+  height: 600px;
 }
 
-.container-central {
-  background: #d3d3d3;
-  padding: 50px 0px 50px 0px;
-}
-
-.container-1-3 {
-  margin: 0px auto;
-  width: 1200px;
-  display: flex;
-  margin: 55px 0px 55px 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-2-4 {
-  width: 1200px;
-  display: flex;
-  margin: auto;
-  flex-direction: row-reverse;
-}
-
-.col1 {
-  background-color: #1e90ff;
-  height: 518px;
-  width: 746px;
-  border-style: dashed;
-}
-
-.col2 {
-  background-color: #ffc0cb;
-  height: 518px;
-  width: 495px;
-  border-style: dashed;
-}
-
-.last-container {
-  background-color: #d3d3d3;
-  display: flex;
-  justify-content: center;
-}
-
-.contgreen {
-  background-color: #228b22;
-  height: 400px;
-  width: 930px;
-  margin: 50px 0px 50px 0px;
-  border-style: dashed;
-}
+/*
+************
+Common
+************
+*/
 
 .container {
-  display: flex;
-  background-color: #23272a;
-  padding-top: 40px;
-  width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+.container.big {
+  max-width: 1250px;
+}
+
+.container.medium {
+  max-width: 950px;
+}
+
+.row,
+.row-big {
+  display: flex;
+}
+
+/*
+************
+Header
+************
+*/
+
+header {
+}
+
+/* topbar */
+
+header .topbar {
+  padding: 15px;
+}
+
+header .top-menu {
+  background-color: #daa520;
+  display: flex;
+}
+
+header .top-menu > * {
+  padding: 10px;
+}
+
+header .top-menu .header-logo,
+header .top-menu .header-login {
+  width: 20%;
+}
+
+header .top-menu .header-link {
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+header .top-menu .header-login {
+  text-align: right;
+}
+
+/* jumbotron */
+
+header .jumbotron {
+  background-color: #00008b;
+  padding: 50px;
+}
+
+header .jumbotron .content {
+  background-color: #ee82ee;
+}
+
+header .ButtonAccedi {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+************
+Main
+************
+*/
+
+main .section {
+  padding: 50px;
+}
+
+main .section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+main .section .row,
+main .section .row-big {
+  display: flex;
+}
+
+main .section .row .col-big {
+  background-color: #1e90ff;
+  width: 60%;
+}
+
+main .section .row .col-small {
+  background-color: #ffc0cb;
+  width: 40%;
+}
+
+main .section .row-big .col-full {
+  background-color: #228b22;
+  flex-grow: 1;
+}
+
+/* .bg-section {
+  background-color: #d3d3d3;
+} */
+
+/*
+************
+Footer
+************
+*/
 
 footer {
-  background-color: #23272a;
+  /* background-color: #23272a; */
+  background-color: #daa520;
+  padding-top: 10px;
 }
 
-.endfood {
-  background: #7dffd6;
-  display: flex;
-  width: 1200px;
-  margin: auto;
-  justify-content: space-between;
-  height: 44px;
-  align-items: center;
+footer .footer-top {
+  margin-bottom: 40px;
 }
 
-.col1foot {
+footer .footer-top .col-small {
   background-color: #f08080;
-  height: 600px;
-  width: 40%;
-  border-style: dashed;
+  width: 30%;
 }
-
-.horizontal-spacer {
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.col1end,
-.col2end {
-  background-color: #ffb6c1;
-  border-style: dashed;
-}
-
-.col2foot,
-.col3foot,
-.col4foot,
-.col5foot {
+footer .footer-top .col-big {
   background-color: #20b2aa;
-  height: 600px;
-  width: 20%;
-  border-style: dashed;
-  border-color: white;
+  width: 70%;
+  display: flex;
 }
 
-/*
-******
-Common
-******
-*/
-
-/*
-******
-Header
-******
-*/
-
-/*
-******
-Main
-******
-*/
-
-/*
-******
-Footer
-******
-*/
+footer .footer-top .col-big .col {
+  flex-grow: 1;
+}
